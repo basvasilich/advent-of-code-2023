@@ -1,4 +1,4 @@
-# https://adventofcode.com/2023/day/1
+# https://adventofcode.com/2023/day/2
 import os
 import re
 
@@ -59,4 +59,4 @@ assert (solution_part1('data/input.test.txt') == 8)
 print('Result Part 1: ', solution_part1('data/adventofcode.com_2023_day_2_input.txt'))
 
 assert (solution_part2('data/input.test.txt') == 2286)
-print('Result Part 1: ', solution_part2('data/adventofcode.com_2023_day_2_input.txt'))
+print('Result Part 2: ', solution_part2('data/adventofcode.com_2023_day_2_input.txt'))
