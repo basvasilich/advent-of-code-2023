@@ -63,7 +63,7 @@ def solution_part2(filename: str) -> int:
     return make_solution(filename, from_start_digits, from_end_digits)
 
 
-assert (solution_part1('input.test.txt') == 142)
-print('Result Part 1: ', solution_part1('adventofcode.com_2023_day_1_input.txt'))
-assert (solution_part2('input2.test.txt') == 281)
-print('Result Part 2: ', solution_part2('adventofcode.com_2023_day_1_input.txt'))
+assert (solution_part1('data/input.test.txt') == 142)
+print('Result Part 1: ', solution_part1('data/adventofcode.com_2023_day_1_input.txt'))
+assert (solution_part2('data/input2.test.txt') == 281)
+print('Result Part 2: ', solution_part2('data/adventofcode.com_2023_day_1_input.txt'))
