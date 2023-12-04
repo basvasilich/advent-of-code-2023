@@ -1,4 +1,4 @@
-# https://adventofcode.com/2023/day/2
+# https://adventofcode.com/2023/day/3
 import os
 from typing import Dict
 
@@ -18,7 +18,6 @@ def read_input(filename: str) -> (Dict[str, int], list[(int, int)], list[(int, i
         line = raw_line.rstrip()
         cur_num = ''
         cur_coords = []
-
 
         for col, char in enumerate(line):
             if char.isdigit():
@@ -84,7 +83,6 @@ def solution_part2(filename: str) -> int:
 assert (solution_part2('data/input2.test.txt') == 6756)
 assert (solution_part2('data/input.test.txt') == 467835)
 print('Result Part 2: ', solution_part2('data/adventofcode.com_2023_day_3_input.txt'))
-
 
 assert (solution_part1('data/input2.test.txt') == 925)
 assert (solution_part1('data/input.test.txt') == 4390)
