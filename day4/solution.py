@@ -41,6 +41,7 @@ def solution_part1(filename: str) -> int:
 def solution_part2(filename: str) -> int:
     cards = read_input(filename)
     card_copies = {}
+    result = 0
     for card_id, _, _ in cards:
         card_copies[card_id] = 1
 
@@ -52,8 +53,9 @@ def solution_part2(filename: str) -> int:
         if count > 0:
             for next_card_id in range(card_id + 1, card_id + count + 1):
                 card_copies[next_card_id] += card_copies[card_id]
+        result += card_copies[card_id]
 
-    return sum(card_copies.values())
+    return result
 
 
 assert (solution_part2('data/input.test.txt') == 30)
